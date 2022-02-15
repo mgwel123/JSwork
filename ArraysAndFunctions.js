@@ -45,7 +45,7 @@ function list(){
 list();
 
 // How do you access the last element in an array?
-let last = names[names.length];
+let last = names[names.length - 1];
 console.log(last);
 
 // How do you access the first element in an array?
@@ -53,4 +53,20 @@ let first = names[0];
 console.log(first);
 
 
+
+
+let nameLengths = [];
+function charCount(){
+    var nameLengths = 0;
+    for(let i = 0; i < names.length; i++){
+        var letter = names[i];
+         if (!names[letter]){
+            names[letter] = 1;
+        }else {
+            names[letter]++;
+        }
+    }
+    return names;
+}
+ 
 
