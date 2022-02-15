@@ -1,4 +1,6 @@
 var ages = [3, 9, 23, 64, 2, 8, 28, 93]
+
+//1a
 function subtract(){
     let x = ages[0];
     let y = ages[ages.length - 1];
@@ -7,10 +9,12 @@ function subtract(){
 
 subtract();
 
+//1b
 ages.push (100);
 
 subtract();
 
+//1c
 function average(){
     let sum = 0;
     for (let i = 0; i < ages.length; i++){
@@ -21,9 +25,10 @@ function average(){
 
 console.log(average());
 
+//2
 var names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 
-
+//2a
 function averageNameLength(){
     var sum = 0
     for(var i = 0; i < names.length; i++){
@@ -32,8 +37,9 @@ function averageNameLength(){
     return sum / names.length;
 }
 
-console.log(averageNameLength()); 
+console.log(averageNameLength());
 
+//2b
 function list(){
     var total = 0
     for(var i = 0; i < names.length; i++){
@@ -53,20 +59,13 @@ let first = names[0];
 console.log(first);
 
 
-
+//5
 
 let nameLengths = [];
 function charCount(){
-    var nameLengths = 0;
+    let letterCount = 0;
     for(let i = 0; i < names.length; i++){
-        var letter = names[i];
-         if (!names[letter]){
-            names[letter] = 1;
-        }else {
-            names[letter]++;
-        }
-    }
-    return names;
+        letterCount = names[i].length; 
 }
- 
-
+  return 
+}
