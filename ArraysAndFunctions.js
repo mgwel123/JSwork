@@ -65,7 +65,24 @@ let nameLengths = [];
 function charCount(){
     let letterCount = 0;
     for(let i = 0; i < names.length; i++){
-        letterCount = names[i].length; 
+        letterCount = names[i].length;
+        nameLengths.push(names[i].length); 
 }
-  return 
+  return nameLengths;
 }
+
+console.log(charCount());
+
+//6
+function total(){
+    let sum = 0
+    for(let i = 0; i< nameLengths.length; i++){
+        sum += nameLengths[i];
+    }
+    console.log(sum)
+}
+
+total();
+
+//7
+function 
