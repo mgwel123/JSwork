@@ -39,7 +39,7 @@ function averageNameLength(){
 
 console.log(averageNameLength());
 
-//2b
+//2b (still working on it**)
 function list(){
     var total = 0
     for(var i = 0; i < names.length; i++){
@@ -85,4 +85,33 @@ function total(){
 total();
 
 //7
-function 
+function echo(word, n){
+    let array = [];
+    for(let i = 0; i < n;){
+        array[i++] = word;
+    }
+    return array.join('');
+}
+ console.log(echo("Hey", 3));
+
+ //8
+function fullName(firstName, lastName){
+    return firstName + ' ' + lastName;
+}
+
+console.log(fullName('Michael', 'Welker'));
+
+//9
+let numbersArr = [20, 34, 62, 5];
+function overUnder(){
+    let sum = 0
+    for (let i = 0; i < numbersArr.length; i++){
+        sum += numbersArr[i];
+        if(sum >= 100){
+            
+        }
+    }
+
+}
+
+console.log(overUnder(numbersArr));
