@@ -133,4 +133,27 @@ function arrAverage(){
 console.log(arrAverage()); 
 
 //11 
+function isBigger(x, y){
+    let sum = 0; 
+    for(let i = 0; i < x.length; i++){
+        sum+= x[i];
+    }
+    let total = 0;
+    for(let i = 0; i < y.length; i++){
+        total += y[i];
+    }
+    return sum > total;
+}
 
+console.log(isBigger(numbersArr, numbersArr2)); 
+
+//12 (playing with boolean isHotOutside to figure out how to make it dynamic** not finished)
+let isHotOutside = false;
+function willBuyDrink(isHotOutside, moneyInPocket){
+    if(isHotOutside == !isHotOutside && moneyInPocket > 10.50){
+        return true;
+    }else {
+        return false;
+    }
+}
+console.log(willBuyDrink(isHotOutside, 11));
