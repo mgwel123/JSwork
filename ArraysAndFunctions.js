@@ -15,7 +15,7 @@ ages.push (100);
 subtract();
 
 //1c
-function average(){
+function averageAge(){
     let sum = 0;
     for (let i = 0; i < ages.length; i++){
         sum +=ages[i];
@@ -23,7 +23,7 @@ function average(){
     return sum / ages.length;
 }
 
-console.log(average());
+console.log(averageAge());
 
 //2
 var names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
@@ -101,17 +101,36 @@ function fullName(firstName, lastName){
 
 console.log(fullName('Michael', 'Welker'));
 
-//9
+//9 (still working on it**)
 let numbersArr = [20, 34, 62, 5];
 function overUnder(){
     let sum = 0
     for (let i = 0; i < numbersArr.length; i++){
-        sum += numbersArr[i];
-        if(sum >= 100){
-            
+        sum = sum += numbersArr[i];
+         if(sum >= 100){
+            return true;
+        }else{
+            return false;
         }
     }
 
 }
 
 console.log(overUnder(numbersArr));
+let numbersArr2 = [1, 2, 3, 4, 5];
+console.log(overUnder(numbersArr2)); 
+
+//10 
+let newArray = [3, 6, 22, 14, 8, 31]
+function arrAverage(){
+    let sum = 0
+    for(let i = 0; i < newArray.length; i++){
+        sum += newArray[i];
+    }
+    return sum / newArray.length;
+}
+
+console.log(arrAverage()); 
+
+//11 
+
