@@ -39,16 +39,16 @@ function averageNameLength(){
 
 console.log(averageNameLength());
 
-//2b (still working on it**)
+//2b 
 function list(){
-    var total = 0
-    for(var i = 0; i < names.length; i++){
-    total += names.length;
+    let total = '';
+    for(let i = 0; i < names.length; i++){
+    total += names[i] + ' ';
     }
-    console.log(total + ' ')
+    return total;
 }
 
-list();
+console.log(list());
 
 // How do you access the last element in an array?
 let last = names[names.length - 1];
@@ -156,4 +156,6 @@ function willBuyDrink(isHotOutside, moneyInPocket){
         return false;
     }
 }
-console.log(willBuyDrink(isHotOutside, 11));
+console.log(willBuyDrink(isHotOutside, 11)); 
+
+//13
