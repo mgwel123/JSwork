@@ -101,19 +101,15 @@ function fullName(firstName, lastName){
 
 console.log(fullName('Michael', 'Welker'));
 
-//9 (still working on it**)
+//9 
 let numbersArr = [20, 34, 62, 5];
-function overUnder(){
+function overUnder(numA){
     let sum = 0
-    for (let i = 0; i < numbersArr.length; i++){
-        sum = sum += numbersArr[i];
-         if(sum >= 100){
-            return true;
-        }else{
-            return false;
-        }
+    for (let i = 0; i < numA.length; i++){
+        sum += numA[i];
+        console.log(sum);
     }
-
+    return sum < 100;
 }
 
 console.log(overUnder(numbersArr));
@@ -122,15 +118,15 @@ console.log(overUnder(numbersArr2));
 
 //10 
 let newArray = [3, 6, 22, 14, 8, 31]
-function arrAverage(){
+function arrAverage(x){
     let sum = 0
-    for(let i = 0; i < newArray.length; i++){
-        sum += newArray[i];
+    for(let i = 0; i < x.length; i++){
+        sum += x[i];
     }
-    return sum / newArray.length;
+    return sum / x.length;
 }
 
-console.log(arrAverage()); 
+console.log(arrAverage(newArray)); 
 
 //11 
 function isBigger(x, y){
@@ -148,14 +144,21 @@ function isBigger(x, y){
 console.log(isBigger(numbersArr, numbersArr2)); 
 
 //12 (playing with boolean isHotOutside to figure out how to make it dynamic** not finished)
-let isHotOutside = false;
 function willBuyDrink(isHotOutside, moneyInPocket){
-    if(isHotOutside == !isHotOutside && moneyInPocket > 10.50){
-        return true;
-    }else {
-        return false;
-    }
+    return (isHotOutside && moneyInPocket > 10.50);
 }
-console.log(willBuyDrink(isHotOutside, 11)); 
+console.log(willBuyDrink(true, 8)); 
 
-//13
+//13 
+function findSubString (a, b){
+    let startIndex = a.lastIndexOf(b);
+    console.log(startIndex);
+    if(!startIndex){
+        return;
+    }
+    let lastIndex = b.length + startIndex; 
+ //   console.log(startIndex);
+    return a.substring(startIndex, lastIndex);
+}
+
+console.log(findSubString('Highway', 'ghw'));
